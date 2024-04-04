@@ -1,10 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Calculadora from "./page/calculadora";
 
-function App () {
+function App() {
+
     return (
-    <h1 className="text-3xl font-bold underline">
-        Hola mundo
-        </h1>
-    );
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Calculadora/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
-export default App; 
+export default App;
